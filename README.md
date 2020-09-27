@@ -32,8 +32,7 @@
 
 ## Link da Aplicação
 
-> Link da aplicação: https://exchange-proj.herokuapp.com/
-
+> Link da aplicação: https://auth-node-project.herokuapp.com/
 
 ## Arquitetura
 
