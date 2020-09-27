@@ -1,0 +1,33 @@
+{{#each erros}}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    {{texto}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+{{else}}
+
+{{/each}}
+
+<h2>Pagina de Posts</h2>
+
+
+{{#each postagem}}
+    <div class="card mt-4">
+        <div class="card-body">
+            <h4>Titulo: {{titulo}}</h4>
+            <p>Conteudo: {{conteudo}}</p><br>
+            <hr>
+            <small>Autor: {{categoria.nome}}</small>
+            <br>
+            <small>Data: {{data}}</small><br>
+            <a href="/postagens/{{slug}}">
+                <button class="btn btn-success mt-2">Leia Mais</button>
+            </a>
+
+        </div>
+    </div>
+{{else}}
+    <h4>Nenhuma Postagem Registrada</h4>
+
+{{/each}}

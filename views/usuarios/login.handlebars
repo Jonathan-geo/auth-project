@@ -1,0 +1,101 @@
+    <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                background: url("/img/orc.jpg") no-repeat center top fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                color: #EEE9E9;
+                font-family: sans-serif;
+                
+            }
+
+            input{
+                display: block;
+                height: 55px;
+                width: 400px;
+                margin: 10px;
+                border-radius: 30px;
+                border: 1px solid black;
+                font-size: 16pt;
+                padding: 1px 10px;
+                background-color: rgba(255,255,255,0.10);
+                color: #EEE9E9;
+                outline: none;
+                
+            }
+            input#submit{
+                width: 420px;
+                background-color: rgba(25,150,50,0.10);
+                border: none;
+                cursor: pointer;
+            }
+
+            div#corpo-form{
+            
+                width: 420px;
+                margin: 150px auto 0px auto;
+            }
+
+            div#corpo-form-cad{
+            
+                width: 420px;
+                margin: 80px auto 0px auto;
+            }
+
+            div#corpo-form h1, div#corpo-form-cad h1{
+                text-align: center;
+                padding: 20px;
+                
+            }
+
+            a{
+                color: #EEE9E9;
+                text-decoration: none;
+                text-align: center;
+                display: block;
+            }
+
+
+            /* propriedade que faz aparecer um traço  
+            quando eu passar com o mouse encima */
+            a:hover{
+                text-decoration: underline;
+            }
+
+            ::-webkit-input-placeholder{ /*browsers*/
+                color: #EEE9E9;
+            }
+
+            :-moz-placeholder{ /*Mozila firefox */
+                color: #EEE9E9;
+            }
+
+            ::-moz-placeholder{   /*Mozila firefox*/
+                color: #EEE9E9;
+            }
+
+            :-ms-input-placeholder{  /*Int. Explo*/
+                color: #EEE9E9;
+            }
+    </style>
+    
+    
+    <div id="corpo-form">
+        <h1>ENTRAR</h1>
+        <form method="POST" action="/usuarios/login">
+
+            <input type="email" name="email" placeholder="Usuário (e-mail)" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            
+            <input id="submit" type="submit" value="ACESSAR">
+
+            <a href="/usuarios/registro">AINDA NÃO É INSCRITO?<strong>CADASTRE-SE!</strong></a>
+
+        </form>
+    </div>
