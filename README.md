@@ -13,7 +13,7 @@
 
 :small_blue_diamond: [Funcionalidades](#funcionalidades)
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+:small_blue_diamond: [Link da Aplicação](#link-da-aplicação)
 
 :small_blue_diamond: [Arquitetura](#arquitetura)
 
@@ -34,11 +34,8 @@
 
 > Link da aplicação: https://auth-node-project.herokuapp.com/
 
+
 ## Arquitetura
-
-
-:warning: [python](https://www.python.org/)
-:warning: [Django](https://www.djangoproject.com/)
 
 <h4>NPM</h4> 
 
